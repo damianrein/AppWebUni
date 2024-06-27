@@ -3,9 +3,10 @@
     background-color: #1c1c1c;
 }
 .footer-logos{
-    display: inline-block;
+    display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 45%;
     max-width: 96px;
     max-height: 96px;
 }
