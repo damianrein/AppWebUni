@@ -7,6 +7,8 @@ import { NavegationBarComponent } from './components/navegation-bar/navegation-b
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { HomeComponent } from './components/home/home.component';
+import { FacultiesComponent } from './components/faculties/faculties.component';
+import { InvestigationsComponent } from './components/investigations/investigations.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HomeComponent } from './components/home/home.component';
     NavegationBarComponent,
     FooterComponent,
     LoginPageComponent,
-    HomeComponent
+    HomeComponent,
+    FacultiesComponent,
+    InvestigationsComponent
   ],
   imports: [
     BrowserModule,
