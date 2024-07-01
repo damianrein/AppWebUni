@@ -1,0 +1,34 @@
+.div-principal{
+    height: 500px;
+}
+.div-principal form{
+    height: 100%;
+}
+.form-parts{
+    text-align: center;
+    height: 100%;
+    width: 30%;
+    background-color: #e6e2e2;
+    padding: 7px;
+    margin: 10px;
+    margin-left: 35%;
+    border: #e6e2e2 solid 1px;
+    border-radius: 2em;
+    font-size: 18;
+}
+.user-part{
+    font-size: 2em;
+}
+.pass-part-input input::placeholder{    
+    font-size: 16px;
+    text-align: center;
+}
+.pass-part{
+    font-size: 2em;
+}
+.pass-part-input input{
+    width: 300px;
+    height: 3em;
+    border: #e6e2e2 solid 1px;
+    border-radius: 1em;
+}
