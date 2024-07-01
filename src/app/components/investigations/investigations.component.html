@@ -25,13 +25,13 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr  *ngFor="let investigacion of investigaciones">
+                <td>{{investigacion.inicio}}</td>
+                <td>{{investigacion.fin}}</td>
+                <td>{{investigacion.estado}}</td>
+                <td>{{investigacion.tema}}</td>
+                <td>{{investigacion.descripcion}}</td>
+                <td><button>Ver Mas</button></td>
             </tr>
         </tbody>
     </table>
