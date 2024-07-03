@@ -1,1 +1,41 @@
-
+<div>
+    <nav class="nav">
+        <div>
+            <ul class="ul">
+                <div>
+                    <li class="nav-li"><a routerLink="">Facultades</a>
+                    <div>
+                        <a class="drop-div" href="">Sociales</a><a class="drop-div" href="">Exactas</a><a class="drop-div" href="">Ambas</a>
+                    </div></li>
+                    <li class="nav-li"><a routerLink="">Sedes</a></li>
+                    <li class="nav-li"><a routerLink="">Investigaciones</a></li>
+                    <li class="nav-li"><a routerLink="">Investigadores</a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="th">Inicio</th>
+                <th class="th">Fin</th>
+                <th class="th">Estado</th>
+                <th class="th">Tema</th>
+                <th class="th">Descripcion</th>
+                <th class="th">Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  *ngFor="let investigacion of investigaciones">
+                <td>{{investigacion.inicio}}</td>
+                <td>{{investigacion.fin}}</td>
+                <td>{{investigacion.estado}}</td>
+                <td>{{investigacion.tema}}</td>
+                <td>{{investigacion.descripcion}}</td>
+                <td><button>Ver Mas</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
