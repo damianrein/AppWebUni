@@ -24,6 +24,9 @@
     color: #000000;
 }
 .submenu {
+    padding: 8px;
+    border: 1px solid #f2f2f2;
+    border-radius: 1em;
     display: none;
     position: absolute;
     background-color: #fff;
@@ -36,13 +39,26 @@
 .a{
     color: #000000;
     font-size: 20px;
+    text-decoration: none;
 }
 .drop-div:hover{
+    text-decoration: none;
     display: block;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 .table{
-    width: 95%;
+    width: 99%;
+    border-collapse: collapse;
 }
 .th{
     font-size: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.td{
+    padding: 8px;
+    border: 1px solid #ddd;
 }
