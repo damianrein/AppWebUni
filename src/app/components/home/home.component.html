@@ -3,13 +3,26 @@
         <div>
             <ul class="ul">
                 <div>
-                    <li class="nav-li"><a routerLink="">Facultades</a>
-                    <div>
-                        <a class="drop-div" href="">Sociales</a><a class="drop-div" href="">Exactas</a><a class="drop-div" href="">Ambas</a>
-                    </div></li>
-                    <li class="nav-li"><a routerLink="">Sedes</a></li>
-                    <li class="nav-li"><a routerLink="">Investigaciones</a></li>
-                    <li class="nav-li"><a routerLink="">Investigadores</a></li>
+                    <li class="nav-li"><a class="a" routerLink="">Facultades</a>
+                        <div>
+                            <ul class="submenu">
+                                <li><a class="drop-div" href="">Sociales</a></li>
+                                <li><a class="drop-div" href="">Exactas</a></li>
+                                <li><a class="drop-div" href="">Ambas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-li"><a class="a" routerLink="">Sedes</a></li>
+                    <li class="nav-li"><a class="a" routerLink="">Investigaciones</a>
+                        <div>
+                            <ul class="submenu">
+                                <li><a class="drop-div" href="">Terminadas</a></li>
+                                <li><a class="drop-div" href="">En Curso</a></li>
+                                <li><a class="drop-div" href="">Sin Iniciar</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-li"><a class="a" routerLink="">Investigadores</a></li>
                 </div>
             </ul>
         </div>
@@ -29,12 +42,12 @@
         </thead>
         <tbody>
             <tr  *ngFor="let investigacion of investigaciones">
-                <td>{{investigacion.inicio}}</td>
-                <td>{{investigacion.fin}}</td>
-                <td>{{investigacion.estado}}</td>
-                <td>{{investigacion.tema}}</td>
-                <td>{{investigacion.descripcion}}</td>
-                <td><button>Ver Mas</button></td>
+                <td class="td">{{investigacion.inicio}}</td>
+                <td class="td">{{investigacion.fin}}</td>
+                <td class="td">{{investigacion.estado}}</td>
+                <td class="td">{{investigacion.tema}}</td>
+                <td class="td">{{investigacion.descripcion}}</td>
+                <td class="td"><button>Ver Mas</button></td>
             </tr>
         </tbody>
     </table>
