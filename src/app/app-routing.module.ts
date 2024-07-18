@@ -12,8 +12,8 @@ const routes: Routes = [
   {path:'login',component:LoginPageComponent},
   {path:'register',component:RegisterPageComponent},
   {path:'investigations',component:InvestigationsComponent},
-  {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'investigation-Info',component:InvestigationInfoComponent},
+  {path:'',redirectTo:'Home',pathMatch:'full'},
   {path:'**',component:PageNotFoundComponent}
 ];
 

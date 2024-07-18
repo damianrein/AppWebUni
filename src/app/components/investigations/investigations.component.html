@@ -1,58 +1,37 @@
-<div>
-    <nav class="nav">
-        <div>
-            <ul class="ul">
-                <div>
-                    <li class="nav-li"><a class="a" routerLink="">Facultades</a>
-                        <div>
-                            <ul class="submenu">
-                                <li><a class="drop-div" href="">Sociales</a></li>
-                                <li><a class="drop-div" href="">Exactas</a></li>
-                                <li><a class="drop-div" href="">Ambas</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-li"><a class="a" routerLink="">Sedes</a></li>
-                    <li class="nav-li"><a class="a" routerLink="">Investigaciones</a>
-                        <div>
-                            <ul class="submenu">
-                                <li><a class="drop-div" href="">Terminadas</a></li>
-                                <li><a class="drop-div" href="">En Curso</a></li>
-                                <li><a class="drop-div" href="">Sin Iniciar</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-li"><a class="a" routerLink="">Investigadores</a></li>
-                </div>
-            </ul>
-        </div>
-    </nav>
+<div class="div-principal">
+    <div class="h1">
+        <h1>Detalles de la investigacion</h1>
+    </div>
+    <div class="div-info">
+        <h2 class="h2">Fecha de inicio: </h2>
+        <p class="p">Fecha de inicio</p>
+    </div>
+    <div class="div-info">
+        <h2 class="h2">Fecha de finalización: </h2>
+        <p class="p">finalizacion</p>
+    </div>
+    <div class="div-info">
+        <h2 class="h2">Estado:</h2>
+        <p class="p">terminado</p>
+    </div>
+    <div class="div-info">
+        <h2 class="h2">Tema: </h2>
+        <p class="p">tema</p>
+    </div>
+    <div class="div-info">
+        <h2 class="h2">Descripcion: </h2>
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Provident laborum explicabo pariatur quo rerum consequatur iste,
+              magni tempora dolor magnam ducimus dicta dolorum odio optio?
+               Veritatis, vitae? Omnis, explicabo voluptates.</p>
+    </div>
+
 </div>
-<div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th class="th">Inicio</th>
-                <th class="th">Fin</th>
-                <th class="th">Estado</th>
-                <th class="th">Tema</th>
-                <th class="th">Descripcion</th>
-                <th class="th">Opciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr  *ngFor="let investigacion of investigaciones">
-                <td class="td">{{investigacion.inicio}}</td>
-                <td class="td">{{investigacion.fin}}</td>
-                <td class="td">{{investigacion.estado}}</td>
-                <td class="td">{{investigacion.tema}}</td>
-                <td class="td">{{investigacion.descripcion}}</td>
-                <td class="td"><button>Ver Mas</button></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-
-
-
+<!--
+    <td class="td">{{investigacion.inicio}}</td>
+<td class="td">{{investigacion.fin}}</td>
+<td class="td">{{investigacion.estado}}</td>
+<td class="td">{{investigacion.tema}}</td>
+<td class="td">{{investigacion.descripcion}}</td>
+<td class="td"><button>Volver a la tabla</button></td>
+-->
