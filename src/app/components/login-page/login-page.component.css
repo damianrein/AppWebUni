@@ -18,19 +18,34 @@
 }
 .user-part{
     font-size: 2em;
+    padding: 1.5em;
 }
 .user-part-input input{    
-    width: 200px;
-    height: 2em;
+    width: 300px;
+    height: 3em;
     border: #e6e2e2 solid 1px;
     border-radius: 1em;
 }
 .pass-part{
     font-size: 2em;
+    padding: 1.5em;
 }
 .pass-part-input input{
-    width: 200px;
-    height: 2em;
+    width: 300px;
+    height: 3em;
     border: #e6e2e2 solid 1px;
+    border-radius: 1em;
+}
+.input-button{
+    font-size: 2em;
+    padding: 1.5em;
+}
+.input-button input{
+    background-color: cornflowerblue;
+    color: #e6e2e2;
+    width: 300px;
+    size: 1em;
+    padding: 1em;
+    border: rgb(67, 0, 250)olid 1px;
     border-radius: 1em;
 }

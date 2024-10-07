@@ -11,7 +11,7 @@ import { FacultiesComponent } from './components/faculties/faculties.component';
 import { InvestigationsComponent } from './components/investigations/investigations.component';
 import { RegisterPageComponent } from './components/register-page/register-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { InvestigationInfoComponent } from './investigation-info/investigation-info.component';
+import { InvestigationInfoComponent } from './components/investigation-info/investigation-info.component';
 
 @NgModule({
   declarations: [
