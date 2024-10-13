@@ -6,13 +6,14 @@ import { RegisterPageComponent } from './components/register-page/register-page.
 import { InvestigationsComponent } from './components/investigations/investigations.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { InvestigationInfoComponent } from './components/investigation-info/investigation-info.component';
+import { AuthGuard } from './services/auth.guard';
 
 const routes: Routes = [
-  {path:'Home',component:HomeComponent},
+  {path:'Home',component:HomeComponent, canActivate: [AuthGuard] },
   {path:'login',component:LoginPageComponent},
   {path:'register',component:RegisterPageComponent},
-  {path:'investigations',component:InvestigationsComponent},
-  {path:'investigation-Info',component:InvestigationInfoComponent},
+  {path:'investigations',component:InvestigationsComponent, canActivate: [AuthGuard] },
+  {path:'investigation-Info',component:InvestigationInfoComponent, canActivate: [AuthGuard] },
   {path:'',redirectTo:'Home',pathMatch:'full'},
   {path:'**',component:PageNotFoundComponent}
 ];
